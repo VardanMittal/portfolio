@@ -29,9 +29,24 @@ const config: Config = {
         highlight: "#eb5e28",
         dotGrid: "#ccc5b9",
       },
+      animation: {
+        shimmer: "shimmer 2s linear infinite",
+      },
+      keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+      },
     },
   },
-  plugins: [addVariablesForColors,     function ({ matchUtilities, theme }: any) {
+  plugins: [
+    addVariablesForColors,
+    function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
           "bg-grid": (value: any) => ({
@@ -52,7 +67,8 @@ const config: Config = {
         },
         { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
       );
-    },],
+    },
+  ],
 };
 
 function addVariablesForColors({ addBase, theme }: any) {
