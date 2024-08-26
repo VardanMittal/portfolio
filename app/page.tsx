@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 export default function Home() {
@@ -8,19 +9,19 @@ export default function Home() {
     },
     { 
       name: "About", 
-      link: "/about", 
+      link: "/About", 
     },
     { 
       name: "Projects", 
-      link: "/projects", 
+      link: "/Projects", 
     },
     { 
       name: "Skills", 
-      link: "/skills", 
+      link: "/Skills", 
     },
     { 
       name: "Contact", 
-      link: "/contact", 
+      link: "/Contact", 
     },
   ];
   return (
@@ -29,6 +30,8 @@ export default function Home() {
         <FloatingNav 
         navItems={navItems}/>
         <Hero/>
+        <br/>
+        <About/>
       </div>
     </main>
   );
