@@ -23,11 +23,31 @@ const config: Config = {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        background: "#252422",
-        components: "#403d39",
-        text: "#FFFcf2",
-        highlight: "#eb5e28",
-        dotGrid: "#ccc5b9",
+        background: {
+          DEFAULT: "#252422",
+          light: "#3a3633",
+          dark: "#1a1714",
+        },
+        components: {
+          DEFAULT: "#403d39",
+          light: "#5b5550",
+          dark: "#2d2a26"
+        },
+        text: {
+          DEFAULT: "#FFFcf2",
+          secondary: "#e2dcd5",
+          accent: "#d3cfc5"
+        },
+        highlight: {
+          DEFAULT: "#eb5e28",
+          light: "#f8a78b",
+          dark: "#b7491b"
+        },
+        dotGrid: {
+          DEFAULT: "#ccc5b9",
+          light: "#e0d8c4",
+          dark: "#b1a89a"
+        }
       },
       animation: {
         shimmer: "shimmer 2s linear infinite",

@@ -24,9 +24,9 @@ const Hero = () => {
     },
   ];
   return (
-    <div className="pb-20 pt-36 text-text">
-      <div className="h-screen w-full dark:bg-background bg-white  dark:bg-dot-dotGrid/[0.5] bg-dot-black/[0.5] absolute flex items-center justify-center top-0 left-0">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-background bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    <div className="pb-5 pt-36 text-text">
+      <div className="fixed inset-0 h-screen w-full dark:bg-background bg-white dark:bg-dot-dotGrid/[0.5] bg-dot-black/[0.5] flex items-center justify-center">
+        <div className="absolute inset-0 pointer-events-none flex items-center justify-center dark:bg-background bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       </div>
       <div className="flex flex-col md:flex-row relative z-10 mx-10">
         {/* Text column */}
@@ -46,12 +46,12 @@ const Hero = () => {
           <div className="my-5">
             <MagicButton
               text="Download CV"
-              feature="download"
+              // feature="download"
               icon={<FaDownload />}
-              href="../public/Vardan_Mittal.pdf"
+              href="/Vardan_Mittal.pdf"
             />
           </div>
-            <FloatingDock items={links} />
+          <FloatingDock items={links} />
         </div>
         {/* Animation Column */}
         <div className="flex-1">
