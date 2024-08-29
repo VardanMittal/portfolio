@@ -10,22 +10,15 @@ export type Card = {
 
 export const cards: Card[] = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "/path-to-image.jpg",
+    description: "Robofest 3.0",
+    title: "Raksh- A fully automatic pesticide spraying robot",
+    src: "/projects/raksh.jpg",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink:
+      "https://github.com/VardanMittal/RAKSH-Autonomous-Pesticide-Spraying-Robot",
     content: `
       <p>
-        Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-        her melancholic and cinematic music style. Born Elizabeth Woolridge
-        Grant in New York City, she has captivated audiences worldwide with her
-        haunting voice and introspective lyrics. <br /> <br /> Her songs often
-        explore themes of tragic romance, glamour, and melancholia, drawing
-        inspiration from both contemporary and vintage pop culture. With a
-        career that has seen numerous critically acclaimed albums, Lana Del Rey
-        has established herself as a unique and influential figure in the music
-        industry, earning a dedicated fan base and numerous accolades.
+        At Robofest 3.0 organized by Gujcost, I led the development of RAKSH, an advanced autonomous pesticide spraying robot designed to revolutionize precision agriculture. RAKSH is engineered to carry up to 10 distinct pesticides, leveraging real-time disease detection to intelligently select and apply the most effective treatment. With IMU-guided and vision-assisted navigation, RAKSH autonomously traverses complex terrains with precision. Its integration of vision algorithms enables rapid and accurate disease identification, ensuring timely intervention for optimal crop health. My contributions encompassed comprehensive system integration, algorithmic innovation, and collaborative management, highlighting my dedication to merging engineering disciplines for pioneering sustainable agricultural solutions and advancing global food security.
       </p>
     `,
   },

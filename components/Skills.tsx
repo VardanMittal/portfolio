@@ -1,4 +1,7 @@
 import React from 'react'
+import { FocusCards } from './ui/FocusCard';
+import { cards } from '@/data/fetchSkills';
+
 
 const Skills = () => {
   return (
@@ -7,6 +10,7 @@ const Skills = () => {
         Skills
       </h1>
       <hr className="my-8 border-t-2 border-highlight w-1/2 mx-auto mb-20" />
+      <FocusCards cards={cards}/>
     </div>
   );
 }
